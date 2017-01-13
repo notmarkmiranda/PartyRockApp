@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA30D6281E289DC500CA4F9C /* PartyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30D6271E289DC500CA4F9C /* PartyCell.swift */; };
+		DA30D62A1E289F7A00CA4F9C /* PartyRock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA30D6291E289F7A00CA4F9C /* PartyRock.swift */; };
+		DA4257711E1FC590002B0EF5 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4257701E1FC590002B0EF5 /* VideoVC.swift */; };
 		DAD0DAF21E179C7600D8440B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DAF11E179C7600D8440B /* AppDelegate.swift */; };
-		DAD0DAF41E179C7600D8440B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DAF31E179C7600D8440B /* ViewController.swift */; };
+		DAD0DAF41E179C7600D8440B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD0DAF31E179C7600D8440B /* MainVC.swift */; };
 		DAD0DAF71E179C7600D8440B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DAF51E179C7600D8440B /* Main.storyboard */; };
 		DAD0DAF91E179C7600D8440B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DAF81E179C7600D8440B /* Assets.xcassets */; };
 		DAD0DAFC1E179C7700D8440B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DAFA1E179C7700D8440B /* LaunchScreen.storyboard */; };
+		DAD0DB071E17A09400D8440B /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAD0DB061E17A09400D8440B /* still time.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA30D6271E289DC500CA4F9C /* PartyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyCell.swift; sourceTree = "<group>"; };
+		DA30D6291E289F7A00CA4F9C /* PartyRock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartyRock.swift; sourceTree = "<group>"; };
+		DA4257701E1FC590002B0EF5 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 		DAD0DAEE1E179C7600D8440B /* PartyRockApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyRockApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD0DAF11E179C7600D8440B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DAD0DAF31E179C7600D8440B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAD0DAF31E179C7600D8440B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		DAD0DAF61E179C7600D8440B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DAD0DAF81E179C7600D8440B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAD0DAFB1E179C7700D8440B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAD0DAFD1E179C7700D8440B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAD0DB061E17A09400D8440B /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "still time.ttf"; path = "PartyRockApp/still time.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,51 @@
 		DAD0DAF01E179C7600D8440B /* PartyRockApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAD0DB081E17A09F00D8440B /* Files */,
+				DAD0DB051E179D0000D8440B /* View */,
+				DAD0DB041E179CF300D8440B /* Model */,
+				DAD0DB031E179CD400D8440B /* Controller */,
 				DAD0DAF11E179C7600D8440B /* AppDelegate.swift */,
-				DAD0DAF31E179C7600D8440B /* ViewController.swift */,
 				DAD0DAF51E179C7600D8440B /* Main.storyboard */,
 				DAD0DAF81E179C7600D8440B /* Assets.xcassets */,
 				DAD0DAFA1E179C7700D8440B /* LaunchScreen.storyboard */,
 				DAD0DAFD1E179C7700D8440B /* Info.plist */,
 			);
 			path = PartyRockApp;
+			sourceTree = "<group>";
+		};
+		DAD0DB031E179CD400D8440B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0DAF31E179C7600D8440B /* MainVC.swift */,
+				DA4257701E1FC590002B0EF5 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DAD0DB041E179CF300D8440B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA30D6291E289F7A00CA4F9C /* PartyRock.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DAD0DB051E179D0000D8440B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA30D6271E289DC500CA4F9C /* PartyCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DAD0DB081E17A09F00D8440B /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAD0DB061E17A09400D8440B /* still time.ttf */,
+			);
+			name = Files;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD0DAFC1E179C7700D8440B /* LaunchScreen.storyboard in Resources */,
+				DAD0DB071E17A09400D8440B /* still time.ttf in Resources */,
 				DAD0DAF91E179C7600D8440B /* Assets.xcassets in Resources */,
 				DAD0DAF71E179C7600D8440B /* Main.storyboard in Resources */,
 			);
@@ -137,7 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAD0DAF41E179C7600D8440B /* ViewController.swift in Sources */,
+				DA4257711E1FC590002B0EF5 /* VideoVC.swift in Sources */,
+				DAD0DAF41E179C7600D8440B /* MainVC.swift in Sources */,
+				DA30D62A1E289F7A00CA4F9C /* PartyRock.swift in Sources */,
+				DA30D6281E289DC500CA4F9C /* PartyCell.swift in Sources */,
 				DAD0DAF21E179C7600D8440B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,6 +351,7 @@
 				DAD0DB021E179C7700D8440B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
